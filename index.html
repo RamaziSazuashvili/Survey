@@ -1,43 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Survey-Form.Tech-Space</title>
-</head>
+  </head>
 
-<body>
-    <header>
-        <div align="center">
-        <h1>Tech Space Survey Form</h1>
-        <p><big><p><i>Thank you for taking your time to let us improve our platform</i></p></big></p>
+  <body>
+    <div class="container">
+        <header>
+            <h1 align="center">Tech Space Survey Form</h1>
+            <p>
+                <big>
+                    <p align="center">
+                    <i>Thank you for taking your time to let us improve our
+                    platform
+                    </i>
+                </big>
+            </p>
+        
+        </header>
+        <br />
+    <form id="survey-form"></form>
+        <div class="form-group" align="center">
+            <label for="username"
+            ><big><b>Name</b></big></label
+            >
+            <br />
+            <input
+            type="text"
+            id="username"
+            placeholder="Type Your Name Here"
+            required
+            />
         </div>
-    </header>
-    <br />
+        <br />
 
-    <form id="Survey-Form">
         <div align="center">
-            <label for="username" ><big><b>Name</b></big></label>
+            <label for="email"
+            ><big><b>Email</b></big></label
+            >
             <br />
-            <input type="text" id="username" placeholder="Type Your Name Here">
-            <br />
-            <br />
-
-            <label for="email"><big><b>Email</b></big></label>
-            <br />
-            <input type="text" id="email" placeholder="Type Your Email Here">
-            <br />
-            <br />
-
-            <label for="Age"><big><b>Age</b></big></label>
-            <br />
-            <input type="text" id="age" placeholder="Type Your Age (optional)">
-            <br />
-            <br />
-
+            <input
+            type="text"
+            id="email"
+            placeholder="Type Your Email Here"
+            required
+            />
         </div>
+        <br />
+
+        <div align="center">
+            <label for="Age"
+            ><big><b>Age</b></big></label
+            >
+            <br />
+            <input
+            type="text"
+            id="age"
+            placeholder="Type Your Age (optional)"
+            min="14"
+            max="99"
+            />
+        </div>
+        <br />
+
+        <div align="center">
+            <p>
+            <big><b>Which Option Suits You The Most?</b></big>
+            </p>
+            <select type="dropdown class=form-control" required>
+            <option disabled selected value>Tap To Select</option>
+            <option value="Student Status">Half TIme Student</option>
+            <option value="Student Status">Full Time Student</option>
+            <option value="Employed Status">Half Time Employed</option>
+            <option value="Employed Status">Full Time Employed</option>
+            <option value="Employed Status">Self-Employed</option>
+            <option value="PreferNotToSay">Prefer Not To Say</option>
+            <option value="Other">Other</option>
+            </select>
+        </div>
+        <br />
+
+        <div align="center">
+            <p>
+            <big>
+                <b>
+                    Would You Like To Recommend Tech Space To Your Friends?
+                </b>
+            </big
+            >
+            </p>
+
+            <label>
+            <input
+                type="radio"
+                name="User-Recommendation"
+                value="Definitely"
+                type="radio"
+                required
+            />Definitely
+            </label>
+
+            <br />
+
+            <label>
+            <input
+                type="radio"
+                name="User-Recommendation"
+                value="Maybe"
+                type="radio"
+                required
+            />Maybe
+            </label>
+
+            <br />
+
+            <label>
+            <input
+                type="radio"
+                name="User-Recommendation"
+                value="Not Sure"
+                type="radio"
+                required
+            />Not Sure
+            </label>
+        </div>
+            <br />
+    </div>
     </form>
-</body>
+
+  </body>
 
 </html>
