@@ -9,68 +9,86 @@
 
   <body>
     <div class="container">
-        <header>
-            <h1 align="center">Tech Space Survey Form</h1>
-            <p>
-                <big>
-                    <p align="center">
-                    <i>Thank you for taking your time to let us improve our
-                    platform
-                    </i>
-                </big>
-            </p>
-        
-        </header>
-        <br />
-    <form id="survey-form"></form>
+      <header>
+        <h1 align="center">Tech Space Survey Form</h1>
+        <p>
+          <big>
+            <p align="center">
+              <i
+                >Thank you for taking your time to let us improve our platform
+              </i>
+            </p></big
+          >
+        </p>
+
+      </header>
+      <br />
+      <form id="survey-form">
         <div class="form-group" align="center">
-            <label for="username"
-            ><big><b>Name</b></big></label
-            >
-            <br />
-            <input
+          <label id="name-label" for="username"
+            ><big>
+                <b>Name</b>
+            </big>
+          </label>
+          <br />
+          
+          <input
             type="text"
+            name="Username"
             id="username"
+            class="form-control"
             placeholder="Type Your Name Here"
             required
-            />
+          />
         </div>
         <br />
 
-        <div align="center">
-            <label for="email"
-            ><big><b>Email</b></big></label
-            >
-            <br />
-            <input
-            type="text"
+        <div class="form-group" align="center">
+          <label id="email-label" for="email"
+            ><big>
+                <b>Email</b>
+            </big>
+          </label
+          >
+          <br />
+          <input
+            type="email"
+            name="email"
             id="email"
+            class="form-control"
             placeholder="Type Your Email Here"
             required
-            />
+          />
         </div>
         <br />
 
-        <div align="center">
-            <label for="Age"
-            ><big><b>Age</b></big></label
-            >
-            <br />
-            <input
-            type="text"
+        <div class="form-group" align="center">
+          <label id="number-label" for="Age"
+            ><big>
+                <b>Age</b>
+            </big>
+          </label
+          >
+          <br />
+          <input
+            type="number"
+            name="age"
             id="age"
+            class="form-control"
             placeholder="Type Your Age (optional)"
             min="14"
             max="99"
-            />
+          />
         </div>
         <br />
 
-        <div align="center">
-            <p>
-            <big><b>Which Option Suits You The Most?</b></big>
-            </p>
-            <select type="dropdown class=form-control" required>
+        <div class="form-group" align="center">
+          <p>
+            <big>
+                <b>Which Option Suits You The Most?</b>
+            </big>
+          </p>
+          <select type="dropdown" class="form-control" required>
             <option disabled selected value>Tap To Select</option>
             <option value="Student Status">Half TIme Student</option>
             <option value="Student Status">Full Time Student</option>
@@ -79,58 +97,181 @@
             <option value="Employed Status">Self-Employed</option>
             <option value="PreferNotToSay">Prefer Not To Say</option>
             <option value="Other">Other</option>
-            </select>
+          </select>
         </div>
         <br />
 
-        <div align="center">
-            <p>
+        <div class="form-group" align="center">
+          <p>
             <big>
-                <b>
-                    Would You Like To Recommend Tech Space To Your Friends?
-                </b>
-            </big
-            >
-            </p>
+              <b> Would You Like To Recommend Tech Space To Your Friends?</b>
+            </big>
+          </p>
 
-            <label>
+          <label>
             <input
-                type="radio"
-                name="User-Recommendation"
-                value="Definitely"
-                type="radio"
-                required
+              type="radio"
+              name="User-Recommendation"
+              value="Definitely"
+              type="radio"
+              class="input-radio"
+              required
             />Definitely
-            </label>
+          </label>
 
-            <br />
+          <br />
 
-            <label>
+          <label>
             <input
-                type="radio"
-                name="User-Recommendation"
-                value="Maybe"
-                type="radio"
-                required
+              type="radio"
+              name="User-Recommendation"
+              value="Maybe"
+              type="radio"
+              class="input-radio"
+              required
             />Maybe
-            </label>
+          </label>
 
-            <br />
+          <br />
 
-            <label>
+          <label>
             <input
-                type="radio"
-                name="User-Recommendation"
-                value="Not Sure"
-                type="radio"
-                required
+              type="radio"
+              name="User-Recommendation"
+              value="Not Sure"
+              type="radio"
+              class="input-radio"
+              required
             />Not Sure
-            </label>
+          </label>
         </div>
-            <br />
-    </div>
-    </form>
+        <br />
 
+        <div class="form-group" align="center">
+          <p>
+            <big>
+                <b>What Is Your Favorite Feature Of Tech Space?</b>
+            </big>
+          </p>
+            <select type="dropdown" class="form-control" required>
+              <option disabled selected value>Tap To Select</option>
+              <option value="Challenges">Challenges</option>
+              <option value="Projects">Projects</option>
+              <option value="Community">Community</option>
+              <option value="OpenSource">OpenSource</option>
+            </select>
+          </p>
+        </div>
+        <br />
+
+        <div class="form-group" align="center">
+            <p>
+                <big>
+                    <b>What Would You Like To See Improved?</b>
+                </big>
+            </p>
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Front-End-Projects">
+            Front-End Projects
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Back-End Projects">
+            Back-End Projects
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Data-Visualization">
+            Data Visualization
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Challenges">
+            Challenges
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Open-Source-Community">
+            Open Source Community
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Getter-Help-Rooms">
+            Getter Help Rooms
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Videos">
+            Videos
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="City-Meetups">
+            City Meetups
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Wiki">
+            Wiki
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Forum">
+            Forum
+        </label>
+        <br />
+
+        <label>
+            <input type="checkbox" class="input-checkbox" value="Additional-Courses">
+            Additional Courses
+        </label>
+        </div>
+        <br />
+
+        <div class="form-group" align="center">
+            <p>
+                <big>
+                    <b>Any Comments/Suggestions?</b>
+                </big>
+            </p>
+            <textarea 
+                cols="40"
+                rows="5"
+                id="comments" 
+                class="input-textarea" 
+                name="comment" 
+                placeholder="Enter Your Thought here">
+            </textarea>
+        </div>
+        <br />
+
+        <div class="form-group" align="center">
+            <button
+            type="submit"
+            id="submit"
+            class="submit-button">
+            Submit
+            </button>
+        </div>
+
+      </form>
+      <footer>
+        <small>
+            Mail Us: <a href="mailto:Email@edu.ge">Email@edu.ge</a>
+            <br >
+            Call Us:     <a href=tel:0 32 2** ***> 0 32 2** ***</a>
+        </small>
+      </footer>
+    </div>
   </body>
 
 </html>
